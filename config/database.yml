@@ -20,13 +20,24 @@ default: &default
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
-  #username: cqomazusfymsen
-  #password: nj-M5RMNQ64IHLit_KBi5BxEgA 
+  username: postgres
+  password: Porcaria01
 
 development:
   <<: *default
-  database: pessoas_development
+  adapter: postgresql
+  encoding: unicode
+  # For details on connection pooling, see rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: 5
+  #username: cqomazusfymsen
+  #password: nj-M5RMNQ64IHLit_KBi5BxEgA
 
+production:
+  adapter: postgresql
+  database: dfdr3uuq78a726
+  pool: 5
+  timeout: 5000
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
