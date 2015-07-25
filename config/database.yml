@@ -21,7 +21,7 @@ default: &default
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: 5
   #username: cqomazusfymsen
-  #password: nj-M5RMNQ64IHLit_KBi5BxEgA
+  #password: nj-M5RMNQ64IHLit_KBi5BxEgA 
 
 development:
   <<: *default
